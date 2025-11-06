@@ -1,0 +1,537 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
+    background-color: bisque;
+    height: 100vh;
+    
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boldt{
+    position: relative;
+    top: 150px;
+    left: 100px;
+    color: #45a049;
+    font-size: 100px;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.dev{
+    position: relative;
+    z-index: 4;
+    color: #45a049;
+    left:-70px;
+    top: 250px;
+    grid-column: 3;
+    font-size: 100px;
+  font-family: "Tourney", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.opl{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    
+    
+}
+.opl button{
+    font-family: "Merriweather", serif;
+    color:#482c0aae ;
+    font-weight: bold;
+}
+.options{
+    display: flex;
+    border-radius: 3em;
+    justify-content:center;
+    background-color: burlywood;
+    padding-top: 10px;
+    width: 700px;
+    height: 4em;
+}
+.upper{
+    grid-row: 1/2;
+    display: flex;
+    gap: 250px;
+    padding: 40px;
+    
+    
+}
+
+.bname{
+    font-family: "Electrolize","sans-serif";
+    padding-top: 20px;
+    padding-left: 20px;
+    width:150px;
+}
+.image{
+    display: grid;
+    grid-row: 2/3;
+    z-index: 3;
+}
+button{
+    background-color: #deb887;
+    transition:  0.4s ease;
+    cursor: pointer;
+    border-radius: 3em;
+    border: 0cap;
+    padding: 1em;
+}
+button:hover {
+  background-color: #45a049; /* slightly darker shade */
+}
+html{
+    background-color: burlywood;
+}
+.bhaimg{
+    position: relative;
+    height: 500px;
+     border-radius: 2em;
+    top:-175px;
+    grid-column: 2/3;
+    z-index: 3;
+}
+.symbols{
+    font-family: "pacifico", sans-serif;
+    color: #deb8876a;
+    font-weight: 900;
+    display: inline-block;
+    font-size: 50px;
+    position: relative;
+    pointer-events:fill;
+    z-index: 0;
+}
+    
+.symbols:hover{
+    color:burlywood;
+}
+.htmls{
+    top: 100px ; 
+    left: 380px; 
+    font-family: "Tourney"; 
+    color:#45a049; 
+}
+.hello{
+    padding: 160px 0 0 0 ;
+
+    text-align: center;
+    background-color: burlywood;
+    
+    
+}
+.greet{
+
+    padding: 1em;
+    color: #482c0aae ;
+}
+.intro{
+    color: #482c0aae;
+   margin: 0 20%;
+}
+
+.grface{
+    height:150px;
+    border-radius: 5em;
+}
+hr{
+    border: dotted bisque 6px;
+    margin: 100px auto ;
+    border-bottom:0px;
+    width: 4%;
+    border-radius: 6em;
+}
+.secskills {
+  background-color: bisque;
+  height: 100vh;
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  text-align: center;
+}
+
+.upperlogos {
+  grid-row: 2;
+ 
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+
+.wordskill {
+  grid-row: 1;
+  height: auto;
+  overflow: visible;
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowerlogos {
+  grid-row: 3;
+
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  align-items: center;
+}
+
+
+.secskills img{
+    height: 4em;
+    width: 4em ;
+    margin:10px;
+}
+.wordskill h1{
+    min-width: 350px;
+    font-size:100px ;
+}
+.racing {
+  font-family: "Racing Sans One", sans-serif;
+  
+  width: fit-content;
+  letter-spacing: 1.5px;
+  
+  color: #3b853f;
+}
+.footer{
+   
+    margin: 70px;
+    background-color:burlywood ;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+}
+.soci li{
+    line-height: 1.6;
+    list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+.footer img{
+    height:15px;
+}
+.softskills{
+    height: auto;
+   
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.softskills img{
+    display: inline;
+    width: 45px;
+    height:45px;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 1em;
+}
+.analytic{
+    width: 400px;
+    text-align: center;
+}
+
+.creative{
+    width: 400px;
+    text-align: center;
+}
+.adaptive{
+    width: 400px;
+    text-align: center;
+}
+.shiny-skills {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #3b853f, #35b103, #3b853f);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  animation: shine 2s linear infinite;
+}
+
+@media ( max-width:1500px) {
+    .boldt , .dev{
+        font-size: 70px;
+    }
+    .bhaimg{
+        height: 500px;
+        top:-140px;
+    }
+    .boldt{
+        left:210px
+    }
+    .dev{
+        top:270px;
+        left:-140px;
+    }
+    .htmls{
+        left:240px;
+        top:130px
+    }
+    .upper{
+        gap:200px;
+    }
+    .symbols{
+        font-size: 50px;
+    }
+}
+
+@media ( max-width:1430px) {
+    .boldt , .dev{
+        font-size: 70px;
+    }
+    .bhaimg{
+        height: 500px;
+        top:-140px;
+    }
+    .boldt{
+        left:177px
+    }
+    .dev{
+        top:270px;
+        left:-107px;
+    }
+    .htmls{
+        left:240px;
+        top:130px
+    }
+    .upper{
+        gap:200px;
+    }
+    .symbols{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:1300px) {
+    .boldt , .dev{
+        font-size: 70px;
+    }
+    .bhaimg{
+        height: 500px;
+        top:-140px;
+    }
+    .boldt{
+        left:160px
+    }
+    .dev{
+        top:270px;
+        left:-80px;
+    }
+    .htmls{
+        left:240px;
+        top:130px
+    }
+    .upper{
+        gap:200px;
+    }
+    .symbols{
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .boldt , .dev{
+        font-size: 40px;
+    }
+    .bhaimg{
+        height: 300px;
+        width: 210px;
+        top:0px;
+        left:0px;
+       
+        
+    }
+    .boldt{
+        position: static;
+        left:0px
+        
+    }
+    .dev{
+        position: static;
+        top: auto;
+        left: auto;
+        margin-top: 60px;
+    }
+    .htmls{
+        display: inline-block !important;
+        font-size: 40px;
+        position: relative;
+        left:0px;
+        top:-400px
+        
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+       
+    }
+
+    .upper{
+        display:block
+    }
+    .symbols{
+        font-size: 50px;
+    }
+    .opl{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .options{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        height: auto;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+      
+    }
+    .symbols{
+        display:none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    .bname{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .secskills {
+       
+  background-color: bisque;
+  height: auto;
+  padding: 50px 0px;
+  display: grid;
+  
+    
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  text-align: center;
+    }
+    .upperlogos {
+ 
+ grid-row: 2;
+  display: flex;
+ gap: 10px;
+  justify-content: space-around;
+  width: 100%;
+
+  align-items: center;
+    }
+
+.wordskill {
+
+  grid-row: 1;
+  height: auto;
+  overflow: visible;
+  width: 100%;
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+    }
+
+.lowerlogos {
+  
+    grid-row:3 ;
+  display: flex;
+ gap: 10px;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+    }
+
+.secskills img{
+    height: 2rem;
+    width: 2rem ;
+    margin:5px;
+}
+.wordskill h1{
+    min-width: 200px;
+    font-size: 50px;
+}
+.racing {
+    font-size: 40px;
+}
+.mail{
+    font-size: 12px !important;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.softskills{
+    flex-direction: column;
+
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+.contt{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: bisque;
+}
+.analytic{
+    width: 200px;
+    text-align: center;
+}
+
+.creative{
+    width: 200px;
+    text-align: center;
+}
+.adaptive{
+    width: 200px;
+    text-align: center;
+}
+
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
+}
