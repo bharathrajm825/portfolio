@@ -3,7 +3,7 @@
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr;
     background-color: bisque;
-    height: 100vh;
+    height: 720px;
     
     overflow: hidden;
 }
@@ -534,4 +534,5 @@ a {
   100% {
     background-position: 100% center;
   }
+
 }
