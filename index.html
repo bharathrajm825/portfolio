@@ -18,14 +18,14 @@
  <div class="container">
     <div class="upper">
         <h2 class="bname">Bharath raj</h2>
-        <div class="options">
+        <nav class="options" aria-label="Main navigation">
             <ul class="opl">
-                <li><button onclick="">Projects</button></li>
-                <li><button>Achivements</button></li>
-                <li><button>Experience</button></li>
-                <li><button>Academics</button></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="image">
         <h1 class="boldt shiny-skills" style="font-weight: 900;">FULL STACK</h1>
@@ -45,14 +45,68 @@
     </div>
 </div>  
 
- <div class="hello">
+ <div class="hello" id="about">
     <img src="./greet.png" class=grface alt="bharath">
         <h2 class="greet merriweather">Hello &hearts;,</h2>
         <h3 class="intro merriweather">I am Bharath Raj,<br> a Full Stack Developer passionate about building dynamic, responsive web applications. With expertise in both front-end and back-end technologies.</h3>
         <hr>
     </div>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="projects-content">
+            <header class="projects-heading">
+                <h2 class="racing shiny-skills" id="projects-title">Projects</h2>
+                <p class="projects-intro">A selection of applications built to solve practical problems with thoughtful interfaces and reliable systems.</p>
+            </header>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-card-heading">
+                        <span class="project-number">01</span>
+                        <div>
+                            <h3>Smart Spend <span>— Expense Tracker</span></h3>
+                        </div>
+                    </div>
+                    <ul class="project-details">
+                        <li>Built a full-stack expense tracking system with real-time updates through REST APIs.</li>
+                        <li>Created an analytics dashboard with dynamic charts for monthly spending trends.</li>
+                        <li>Designed a PostgreSQL schema for transaction history and category-based analysis.</li>
+                        <li>Secured user accounts with bcrypt password hashing, session-based login, and OAuth integration.</li>
+                    </ul>
+                    <ul class="project-stack" aria-label="Technologies">
+                        <li>Node.js</li>
+                        <li>REST APIs</li>
+                        <li>PostgreSQL</li>
+                        <li>bcrypt</li>
+                        <li>OAuth</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-heading">
+                        <span class="project-number">02</span>
+                        <div>
+                            <h3>Institutional Management Portal</h3>
+                        </div>
+                    </div>
+                    <ul class="project-details">
+                        <li>Developed responsive React UI modules, including a student dashboard and admin management panel.</li>
+                        <li>Integrated Express.js REST APIs for student and faculty CRUD operations.</li>
+                        <li>Implemented role-based access control for Admin, Faculty, and Student roles.</li>
+                        <li>Added input validation and error handling for API operations.</li>
+                    </ul>
+                    <ul class="project-stack" aria-label="Technologies">
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
+                        <li>Role-based access</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
     <div class="contt">
-    <div class="secskills">
+    <div class="secskills" id="skills">
         <div class="upperlogos">
             <img src="./python-logo-only.svg" id="py" alt="py logo" style="min-height: fit-content;" >
             <img src="./C++_Logo.svg" id="cpp" alt="cpp logo">
@@ -107,10 +161,10 @@
 
     </div> </div>
 
-<div class="footer">
+<div class="footer" id="contact">
     <div class="contactme">
         <p class="merriweather"style="font-weight: bold;">Contact me</p>
-        <a class="racing mail" href="mailto:bharathraj.m825@gmail.com" style="font-size: 30px; font-family: merriweather ; font-style: normal;">Bharathraj.m825@gmail.com</a>
+        <a class="mail" href="mailto:bharathraj.m825@gmail.com">Bharathraj.m825@gmail.com</a>
         <p><img class="fosvg" src="./phone.svg"> phone: +91 63802 12268</p>
     </div>
     <div class="soci">
@@ -139,4 +193,3 @@
 </body>
 
 </html>
-

@@ -1,3 +1,12 @@
+:root {
+    --font-size-hero: 100px;
+    --font-size-skills: 100px;
+    --font-size-projects: 64px;
+    --font-size-symbol: 50px;
+    --font-size-code-mark: 50px;
+    --font-size-email: 30px;
+}
+
 .container{
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -19,7 +28,7 @@
     top: 150px;
     left: 100px;
     color: #45a049;
-    font-size: 100px;
+    font-size: var(--font-size-hero);
   font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -35,7 +44,7 @@
     left:-70px;
     top: 250px;
     grid-column: 3;
-    font-size: 100px;
+    font-size: var(--font-size-hero);
   font-family: "Tourney", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -55,13 +64,27 @@
     color:#482c0aae ;
     font-weight: bold;
 }
+.opl a{
+    display: block;
+    padding: 1em;
+    border-radius: 3em;
+    background-color: #deb887;
+    color: #482c0aae;
+    font-family: "Merriweather", serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition: background-color 0.4s ease;
+}
+.opl a:hover{
+    background-color: #45a049;
+}
 .options{
     display: flex;
     border-radius: 3em;
     justify-content:center;
     background-color: burlywood;
     padding-top: 10px;
-    width: 700px;
+    width: 600px;
     height: 4em;
 }
 .upper{
@@ -97,6 +120,7 @@ button:hover {
 }
 html{
     background-color: burlywood;
+    scroll-behavior: smooth;
 }
 .bhaimg{
     position: relative;
@@ -111,7 +135,7 @@ html{
     color: #deb8876a;
     font-weight: 900;
     display: inline-block;
-    font-size: 50px;
+    font-size: var(--font-size-symbol);
     position: relative;
     pointer-events:fill;
     z-index: 0;
@@ -125,6 +149,7 @@ html{
     left: 380px; 
     font-family: "Tourney"; 
     color:#45a049; 
+    font-size: var(--font-size-code-mark);
 }
 .hello{
     padding: 160px 0 0 0 ;
@@ -133,6 +158,105 @@ html{
     background-color: burlywood;
     
     
+}
+.projects{
+    min-height: 100vh;
+    padding: 64px 24px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+}
+.projects-content{
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+.projects-heading{
+    max-width: 700px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+.projects h2{
+    width: fit-content;
+    min-width: 0;
+    margin: 0 auto 10px;
+    font-size: var(--font-size-projects);
+    line-height: 1.1;
+}
+.projects-intro{
+    max-width: 620px;
+    margin: 0 auto;
+    color: #482c0a;
+    line-height: 1.7;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px;
+    background: #fffaf1;
+    border: 1px solid rgba(72, 44, 10, 0.12);
+    border-top: 4px solid #45a049;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(72, 44, 10, 0.08);
+}
+.project-card-heading{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.project-number{
+    display: inline-flex;
+    flex: 0 0 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f0df;
+    color: #3b853f;
+    font-weight: 700;
+}
+.project-type{
+    margin-bottom: 6px;
+    font-size: 0.7rem;
+}
+.project-card h3{
+    color: #482c0a;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    line-height: 1.35;
+}
+.project-card h3 span{
+    font-weight: 500;
+}
+.project-details{
+    display: grid;
+    gap: 12px;
+    padding-left: 20px;
+    color: #482c0a;
+    line-height: 1.55;
+}
+.project-details li::marker{
+    color: #45a049;
+}
+.project-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-top: auto;
+}
+.project-stack li{
+    padding: 6px 11px;
+    border: 1px solid rgba(59, 133, 63, 0.22);
+    border-radius: 999px;
+    background: #f1f5e9;
+    color: #315f35;
+    font-size: 0.78rem;
+    font-weight: 600;
 }
 .greet{
 
@@ -201,7 +325,7 @@ hr{
 }
 .wordskill h1{
     min-width: 350px;
-    font-size:100px ;
+    font-size: var(--font-size-skills);
 }
 .racing {
   font-family: "Racing Sans One", sans-serif;
@@ -210,6 +334,12 @@ hr{
   letter-spacing: 1.5px;
   
   color: #3b853f;
+}
+.mail{
+    font-family: "Merriweather", serif;
+    font-size: var(--font-size-email);
+    font-style: normal;
+    color: #3b853f;
 }
 .footer{
    
@@ -272,9 +402,10 @@ a {
 }
 
 @media ( max-width:1500px) {
-    .boldt , .dev{
-        font-size: 70px;
+    :root {
+        --font-size-hero: 70px;
     }
+
     .bhaimg{
         height: 500px;
         top:-140px;
@@ -293,15 +424,9 @@ a {
     .upper{
         gap:200px;
     }
-    .symbols{
-        font-size: 50px;
-    }
 }
 
 @media ( max-width:1430px) {
-    .boldt , .dev{
-        font-size: 70px;
-    }
     .bhaimg{
         height: 500px;
         top:-140px;
@@ -320,15 +445,9 @@ a {
     .upper{
         gap:200px;
     }
-    .symbols{
-        font-size: 50px;
-    }
 }
 
 @media (max-width:1300px) {
-    .boldt , .dev{
-        font-size: 70px;
-    }
     .bhaimg{
         height: 500px;
         top:-140px;
@@ -347,16 +466,18 @@ a {
     .upper{
         gap:200px;
     }
-    .symbols{
-        font-size: 50px;
-    }
 }
 
 
 @media (max-width:600px) {
-    .boldt , .dev{
-        font-size: 40px;
+    :root {
+        --font-size-hero: 40px;
+        --font-size-skills: 50px;
+        --font-size-projects: 40px;
+        --font-size-code-mark: 40px;
+        --font-size-email: 12px;
     }
+
     .bhaimg{
         height: 300px;
         width: 210px;
@@ -378,7 +499,6 @@ a {
     }
     .htmls{
         display: inline-block !important;
-        font-size: 40px;
         position: relative;
         left:0px;
         top:-400px
@@ -394,9 +514,6 @@ a {
 
     .upper{
         display:block
-    }
-    .symbols{
-        font-size: 50px;
     }
     .opl{
         display:flex;
@@ -440,6 +557,21 @@ a {
   grid-template-rows: 1fr 1fr 1fr 3fr;
   text-align: center;
     }
+    .projects{
+        min-height: 100vh;
+        padding: 48px 16px;
+    }
+    .projects-heading{
+        margin-bottom: 24px;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .project-card{
+        padding: 22px 18px;
+        gap: 16px;
+    }
     .upperlogos {
  
  grid-row: 2;
@@ -480,13 +612,6 @@ a {
 }
 .wordskill h1{
     min-width: 200px;
-    font-size: 50px;
-}
-.racing {
-    font-size: 40px;
-}
-.mail{
-    font-size: 12px !important;
 }
 .footer{
     display: flex;
